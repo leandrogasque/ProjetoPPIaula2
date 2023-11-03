@@ -1,0 +1,24 @@
+{
+  "name": "projetoppiaula2",
+  "version": "1.0.0",
+  "description": "Atividade avaliativa 2 de PPI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrogasque/ProjetoPPIaula2.git"
+  },
+  "author": "Leandro Gasque de Melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrogasque/ProjetoPPIaula2/issues"
+  },
+  "homepage": "https://github.com/leandrogasque/ProjetoPPIaula2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
