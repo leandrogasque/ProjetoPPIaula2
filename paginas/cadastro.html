@@ -15,33 +15,40 @@
     <header>
     </header>
     <main class="background">
-        <div class="container mt-4 col-8 glass">
-            <h1>Cadastro de Eventos</h1>
-            <form class="row g-3 needs-validation mt-4" novalidate>
-                <div class="col-md-6">
-                    <label for="validationCustom01" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="validationCustom01"  required>
+        <div class="container mt-4 col-8">
+            <h1>Cadastro De Alunos em Eventos Universitários</h1>
+            <form action='/cadastro' method='GET' class="row g-3 needs-validation mt-4" novalidate>
+                <div class="col-md-2">
+                    <label for="nome" class="form-label">RA</label>
+                    <input type="text" class="form-control" id="ra" name="ra" required>
+                    <div class="invalid-feedback">
+                        Informe o Registro Acadêmico do aluno
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
                     <div class="invalid-feedback">
                         Informe o nome
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="validationCustom02" class="form-label">Sobrenome</label>
-                    <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="col-md-5">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
                     <div class="invalid-feedback">
                         Informe o sobrenome
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label">Cidade</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade" required>
                     <div class="invalid-feedback">
                         Informe a cidade
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">UF</label>
-                    <select class="form-select" id="validationCustom04" required>
+                    <label for="estado" class="form-label">UF</label>
+                    <select class="form-select" id="estado" name="estado" required>
                         <option selected disabled value="">Escolha</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -77,72 +84,69 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" required>
                     <div class="invalid-feedback">
                         Informe o CEP
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <label for="validationCustom06" class="form-label">Telefone</label>
-                    <input type="text" class="form-control" id="validationCustom06" required>
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone" required>
                     <div class="invalid-feedback">
                         Informe o Telefone
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <label for="validationCustom07" class="form-label">E-mail</label>
-                    <input type="text" class="form-control" id="validationCustom07" required>
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="email" name="email" required>
                     <div class="invalid-feedback">
                         Informe o E-mail
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <label for="validationCustom08" class="form-label">Evento</label>
-                    <input type="text" class="form-control" id="validationCustom08" required>
+                    <label for="evento" class="form-label">Evento</label>
+                    <input type="text" class="form-control" id="evento" name="evento" required>
                     <div class="invalid-feedback">
                         Informe o nome do Evento
                     </div>
                 </div>
-                <!-- data -->
                 <div class="col-md-3">
-                    <label for="validationCustom10" class="form-label">Data Início</label>
-                    <input type="date" class="form-control" id="validationCustom10" required>
+                    <label for="dataInicio" class="form-label">Data Início</label>
+                    <input type="date" class="form-control" id="dataInicio" name="dataInicio" required>
                     <div class="invalid-feedback">
                         Informe a data de inicio
                     </div>
                 </div>
-                <!-- hora -->
                 <div class="col-md-3">
-                    <label for="validationCustom11" class="form-label">Hora</label>
-                    <input type="time" class="form-control" id="validationCustom11" required>
+                    <label for="horaInicio" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="horaInicio" name="horaInicio" required>
                     <div class="invalid-feedback">
                         Informe a hora do inicio
                     </div>
                 </div><div class="col-md-3">
-                    <label for="validationCustom10" class="form-label">Data Término</label>
-                    <input type="date" class="form-control" id="validationCustom10" required>
+                    <label for="dataFim" class="form-label">Data Término</label>
+                    <input type="date" class="form-control" id="dataFim" name="dataFim" required>
                     <div class="invalid-feedback">
                         Informe a data de término
                     </div>
                 </div>
-                <!-- hora -->
                 <div class="col-md-3">
-                    <label for="validationCustom11" class="form-label">Hora</label>
-                    <input type="time" class="form-control" id="validationCustom11" required>
+                    <label for="horaFim" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="horaFim" name="horaFim" required>
                     <div class="invalid-feedback">
                         Informe a hora de término
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <label for="validationCustom09" class="form-label">Descrição</label>
-                    <textarea type="text" class="form-control" id="validationCustom09" required> </textarea>
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <textarea type="text" class="form-control" id="descricao" name="descricao" required> </textarea>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" name="inavalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
-                            Concordo com os termos e condições
+                            Concordo com os termos e condições.
                         </label>
                         <div class="invalid-feedback">
                             Você deve concordar antes de enviar.
@@ -164,14 +168,11 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
   var forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
